@@ -19,7 +19,7 @@ if "messages" not in st.session_state:
 with st.sidebar:
     st.header("1. Upload Your Documents")
     uploaded_files= st.file_uploader(
-        "Upload your PDF documents", type="pdf", accept_multiple_files=True
+        "Upload your PDF documents", type=["pdf", "png", "jpg", "jpeg"], accept_multiple_files=True
     )
 
     if st.button("Process Documents") and uploaded_files:

@@ -3,3 +3,4 @@
 *env/
 api/.env
 .env
+.DS_Store
